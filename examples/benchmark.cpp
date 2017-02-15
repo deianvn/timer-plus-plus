@@ -18,11 +18,11 @@ int main()
 
     {
         constexpr int SIZE = 1000000;
-        auto strs = std::make_unique<std::array<std::unique_ptr<std::string>, SIZE>>();
+        auto strs = std::make_unique<std::array<std::string, SIZE>>();
         int index { 0 };
 
         std::generate(std::begin(*strs), std::end(*strs), [&index]() {
-            return std::make_unique<std::string>("string " + std::to_string(++index));
+            return std::string { "string " + std::to_string(++index) };
         });
     }
 
