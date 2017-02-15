@@ -14,8 +14,8 @@
     limitations under the License.
 */
 
-#ifndef TIMER_HPP
-#define TIMER_HPP
+#ifndef RIZOV_TIMER_HPP
+#define RIZOV_TIMER_HPP
 
 #include <chrono>
 
@@ -79,4 +79,4 @@ namespace rizov
 
     };
 }
-#endif //TIMER_HPP
+#endif //RIZOV_TIMER_HPP
